@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ActiveLife Physiotherapy | Booking</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        nav{
+            background-color: #43e380;
+            height: 80px;
+            width: 100%;
+        }
+    </style>
+    
+
+    <style>
+        .background-image {
+        background-image: url('imageph.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 90vh;
+        border: 10px solid;
+    }
+    </style>
+    
+
+</head>
+
+   <body style="background-color: #dec9f1;">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-color-danger ">
+         <label class="name">ActiveLife Physiotherapy</label>
+ 
+         <div class="collapse navbar-collapse" id="navbarNav">
+        
+         <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="professionals.html">Our Professionals</a></li>
+          <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+          <li class="nav-item"><a class="nav-link" href="book.html">Book Now</a></li>
+         </ul>
+         </div>
+     </nav>
+   </div>
+
+
+
+    <div class="background-image">
+        <form action="confirmation.html" netlify method="post">
+        <h2>Your information:<br></h2>
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="613-625-2766" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        
+        <h2>Booking information:<br></h2>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Date</label>
+          <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        
+        <div class="elem-group">
+          <label for="service-selection">Select a Service</label>
+          <select id="service-selection" name="service_preference" required>
+              <option value="">Choose a Service from the List</option>
+              <option value="Physiotherapy">Physiotherapy</option>
+              <option value="BioFlex Laser therapy">BioFlex Laser therapy</option>
+              <option value="Chiropractor ">Chiropractor</option>
+              <option value="E-Stim therapy">E-Stim therapy</option>
+              <option value="Cupping">Cupping</option>
+              <option value="Acupuncture">Acupuncture</option>
+          </select>
+        </div>
+
+        <div class="elem-group">
+            <label for="specialist">Select preferred Specialist</label>
+            <select id="specialist" name="specialist" required>
+                <option value="">Choose a Specialist from the List</option>
+                <option value="James M'Carthy">James M'Carthy</option>
+                <option value="Rita Patel">Rita Patel</option>
+                <option value="Michelle Vasquez">Michelle Vasquez</option>
+            </select>
+          </div>
+
+          <div class="elem-group">
+            <label for="time">Select a Time</label>
+            <select id="time" name="time" required>
+                <option value="">Select a Time from the List</option>
+                <option value="11:00am-12:30am">11:00am-12:30am</option>
+                <option value="12:30am-2:00pm">12:30am-2:00pm</option>
+                <option value="2:00pm-3:30pm">2:00pm-3:30pm</option>
+                <option value="3:30pm-5:00pm">3:30pm-5:00pm</option>
+                <option value="5:00pm-6:30pm">5:00pm-6:30pm</option>
+                <option value="6:30pm-8:00pm">6:30pm-8:00pm</option>
+            </select>
+          </div>
+
+        <hr>
+        
+        <a class="btn btn-primary" href="index.html">Cancel</a>
+        <input type="submit" value="Confirm Booking" class="btn"></input>
+        
+      </form>
+    </div>
+
+    
+     </body>
+     <footer class="text-center">Designed for SEG3125 Project 1 @ uOttawa</footer>
+</html>

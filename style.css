@@ -110,10 +110,22 @@ a.active,a:hover{
     object-fit: cover;
 }
 
-.card-bodySer {
+.card{
     width: 100%;
-    height: 20vw;/*19.2*/
+    height: 35vw;/*19.2*/
     object-fit: cover;
+    background-color:#ffffffbb;
+    border: hidden 3px black;
+    color: #000000;
+}
+
+.cardz{
+    width: 100%;
+    height: 35vw;/*19.2*/
+    object-fit: cover;
+    background-color:#ffffffbb;
+    border: hidden 3px black;
+    color: #000000;
 }
 
 hr {
